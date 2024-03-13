@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Arrays & Objects with js basics</h1>
+  <script>
+    // q1
+    const fName = "haider";
+    const lName = "ghadi";
+
+    console.log(`hello ${fName} ${lName}`);
+
+    // q2
+    const gender = "m";
+    if (gender == "M" || gender == "m") {
+      console.log("Hey MAN!");
+    }
+    else if (gender == "F" || gender == "f") {
+      console.log("hello Beautiful!");
+    }
+    else {
+      console.log("undefined gender");
+    }
+
+    // q3
+    for (let index = 0; index < 1; index++) {
+      console.log(index);
+    }
+
+    // q4
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    console.log("this are even array numbers.");
+    for (let i = 0; i < array.length; i++) {
+
+      if (array[i] % 2 == 0) {
+
+        console.log(array[i]);
+      }
+    }
+
+    // q5
+    const numbers = [45, 87, 46, 4, 5, 68, 97, 11011];
+    let max = numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] > max) {
+        max = numbers[i];
+      }
+
+    } console.log(`largest number is array is ${max}`);
+
+    // q6
+    const personArr = ["haider", "shabbir", "tasneem"];
+    const genderArr = ["male", "male", "female"];
+
+    for (let i = 0; i < personArr.length; i++) {
+      if (genderArr[i] == "male") {
+        console.log(personArr[i]);
+      }
+    }
+
+    // q6 - with object 
+    const obj = [
+      {
+        firstName: "haider",
+        gender: "male"
+      },
+      {
+        firstName: "shabbir",
+        gender: "male"
+      },
+      {
+        firstName: "tasneem",
+        gender: "female"
+      }
+    ];
+    for (let i = 0; i < obj.length; i++) {
+      if (obj[i]["gender"] == "female") {
+        console.log(obj[i]["firstName"]);
+      }
+    }
+  </script>
+</body>
+
+</html>
